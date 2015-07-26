@@ -42,8 +42,9 @@ public class InstaTnT extends JavaPlugin implements Listener {
                 return false;
             }
             toggleInstaTnT(sender);
-
+            return true;
         }
+        return false;
     }
     public void toggleInstaTnT(CommandSender sender) {
         if(InstaTnTUsers.contains((Player) sender)) {
